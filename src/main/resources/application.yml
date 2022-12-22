@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:      defaultZone: http://localhost:8761/eureka/
+
+server:  port: 8762
+
+spring:  cloud:    config:      uri: http://localhost:8888
+      username: admin
+      password: welcome  application:    name: eureka-server-multi
